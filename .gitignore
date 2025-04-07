@@ -1,0 +1,26 @@
+# Diretório da IDE
+.idea/
+*.iml
+
+# Build outputs
+/build/
+**/build/
+
+# Arquivos do Gradle
+.gradle/
+gradle-app.setting
+
+# Logs
+*.log
+
+# Arquivos locais de configuração
+local.properties
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos do Android Studio
+.cxx/
+.externalNativeBuild/
+captures/
