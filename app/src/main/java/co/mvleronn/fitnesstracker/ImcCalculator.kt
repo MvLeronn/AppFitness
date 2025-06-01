@@ -3,6 +3,14 @@ package co.mvleronn.fitnesstracker
 class ImcCalculator {
     companion object {
         fun calculateImc(weight: Int, height: Int): Double {
+            // Verifica entradas numéricas inválidas
+            if (height <= 0) {
+                throw IllegalArgumentException("A altura deve ser um valor positivo.")
+            }
+            if (weight <= 0) {
+                throw IllegalArgumentException("O peso deve ser um valor positivo.")
+            }
+
             return weight / ((height / 100.0) * (height / 100.0))
         }
 
